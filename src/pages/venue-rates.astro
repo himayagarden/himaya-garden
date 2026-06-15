@@ -1,0 +1,838 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+    title="Venue Rates — Himaya Garden"
+    description="Explore Himaya Garden's venue rates for The Garden Event and The Tea House Collections. A premier outdoor events place and tea house in Tucson, Arizona."
+>
+    <main>
+        <!-- Page Header -->
+        <section class="pt-32 pb-20 bg-cream">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32 text-center">
+                <p class="section-label fade-in">Plan Your Gathering</p>
+                <h1 class="fade-in delay-1 font-serif text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-tight text-charcoal mb-6">
+                    Venue Rates
+                </h1>
+                <p class="fade-in delay-2 text-lg text-stone leading-relaxed max-w-2xl mx-auto mb-10">
+                    Transparent pricing for gatherings of every size. From intimate tea ceremonies to full garden celebrations, find the collection
+                    that fits your vision.
+                </p>
+
+                <!-- Collection Quick-Nav -->
+                <div class="fade-in delay-3 flex flex-wrap justify-center gap-3">
+                    <a
+                        href="#garden-collection"
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage/10 text-sage hover:bg-sage hover:text-white transition-all font-medium text-sm tracking-wide"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                            >
+                            </path>
+                        </svg>
+                        Garden Events
+                    </a>
+                    <a
+                        href="#tea-house-collection"
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage/10 text-sage hover:bg-sage hover:text-white transition-all font-medium text-sm tracking-wide"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                            >
+                            </path>
+                        </svg>
+                        Tea House
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Himaya Garden Grounds & Tea House Intro -->
+        <section class="py-24 bg-cream">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-3xl md:text-5xl font-medium tracking-tight leading-tight text-charcoal">Himaya Garden</h2>
+                    <h2 class="font-serif text-3xl md:text-5xl font-medium tracking-tight leading-tight text-charcoal mt-2 mb-8">
+                        Grounds & Tea House
+                    </h2>
+                    <div class="space-y-6 text-stone text-lg leading-relaxed">
+                        <p>
+                            Celebrate life's most meaningful moments at Himaya Garden — a full-service outdoor events venue and tea house, where
+                            beauty, hospitality, and ease come together.
+                        </p>
+                        <p class="font-serif text-2xl text-charcoal">Looking for a Tucson Events Place That Feels Personal?</p>
+                        <p>
+                            Himaya Garden is not just an event space — it's a place where celebrations feel warm, intentional, and deeply cared for.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection Comparison Snapshot -->
+        <section class="py-16 bg-cream-warm">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Garden Card -->
+                    <a
+                        href="#garden-collection"
+                        class="group block bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-stone/10 hover:-translate-y-1"
+                    >
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center text-sage group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 21v-8a2 2 0 012-2h14a2 2 0 012 2v8M10 11V7a4 4 0 118 0v4"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold tracking-widest uppercase text-sage">Outdoor Celebrations</p>
+                                <h3 class="font-serif text-2xl text-charcoal">The Garden Event Collection</h3>
+                            </div>
+                        </div>
+                        <p class="text-stone leading-relaxed mb-6">
+                            A Premier Outdoor Events Place in Tucson, Arizona. Full-service, all-inclusive garden celebrations with catering, bar
+                            service, DJ, and more.
+                        </p>
+                        <div class="flex items-center text-sage font-medium text-sm group-hover:gap-3 transition-all">
+                            <span>Explore Garden Events</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- Tea House Card -->
+                    <a
+                        href="#tea-house-collection"
+                        class="group block bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-stone/10 hover:-translate-y-1"
+                    >
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center text-sage group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold tracking-widest uppercase text-sage">Indoor Gatherings</p>
+                                <h3 class="font-serif text-2xl text-charcoal">The Tea House Collection</h3>
+                            </div>
+                        </div>
+                        <p class="text-stone leading-relaxed mb-6">
+                            An Elegant Tea House Events Place in Tucson, Arizona. Intimate tea parties, showers, and milestone gatherings with high
+                            tea service.
+                        </p>
+                        <div class="flex items-center text-sage font-medium text-sm group-hover:gap-3 transition-all">
+                            <span>Explore Tea House</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Garden Event Collection -->
+        <section id="garden-collection" class="py-24 bg-cream scroll-mt-24">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center mb-16">
+                    <p class="section-label fade-in">Outdoor Celebrations</p>
+                    <h2 class="fade-in delay-1 font-serif text-3xl md:text-5xl font-medium tracking-tight leading-tight text-charcoal">
+                        The Garden Event Collection
+                    </h2>
+                    <p class="fade-in delay-2 text-stone mt-2 text-sm tracking-wider uppercase">A Premier Outdoor Events Place in Tucson, Arizona</p>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                    <div
+                        class="bg-warm-white rounded-xl p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5"
+                    >
+                        <div class="w-10 h-10 mx-auto mb-4 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-lg text-charcoal">A beautiful outdoor events place in Tucson, Arizona</p>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5"
+                    >
+                        <div class="w-10 h-10 mx-auto mb-4 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-lg text-charcoal">A seamless, all-inclusive experience</p>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5"
+                    >
+                        <div class="w-10 h-10 mx-auto mb-4 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-lg text-charcoal">Thoughtfully curated details without overwhelm</p>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5"
+                    >
+                        <div class="w-10 h-10 mx-auto mb-4 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-lg text-charcoal">A venue that feels welcoming, elegant, and stress-free</p>
+                    </div>
+                </div>
+
+                <!-- What's Included -->
+                <div class="text-center mb-12">
+                    <h3 class="font-serif text-3xl md:text-4xl text-charcoal mb-4">What's Included in the Garden Event Collection</h3>
+                    <div class="w-20 h-0.5 bg-sage mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">11-Hour Event Rental</h4>
+                                <p class="text-stone leading-relaxed">
+                                    Thoughtfully designed to support a smooth, unhurried experience: ✓ Setup and arrival time ✓ Full celebration
+                                    window ✓ Cleanup included. No rushing. No stress. Just space to enjoy every moment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">Tables, Seating & Linens</h4>
+                                <p class="text-stone leading-relaxed">
+                                    ✓ Tables and chairs included ✓ Linen options: Ivory, Black, or White ✓ Complete tableware and glassware. Our team
+                                    handles setup and breakdown with care and attention.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">In-House Catering & Tea House Hospitality</h4>
+                                <p class="text-stone leading-relaxed">
+                                    As a family-owned tea house and events venue in Tucson, food and service are the heart of what we do. Included: ✓
+                                    Served buffet-style brunch or dinner ✓ Complimentary menu tasting for two ✓ Self-serve beverage station with iced
+                                    tea, lemonade, and water
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">Bar & Beverage Service</h4>
+                                <p class="text-stone leading-relaxed">
+                                    ✓ Professional bartending services included ✓ You supply the alcohol, we provide the rest ✓ Polished,
+                                    guest-focused service throughout your event
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">Music, Sound & Celebration</h4>
+                                <p class="text-stone leading-relaxed">
+                                    DJ services for five hours, including: ✓ Professional sound system ✓ Microphones for speeches ✓ Dance floor
+                                    lighting. Perfect for ceremonies, receptions, and celebrations that flow effortlessly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">Desserts & Sweet Details</h4>
+                                <p class="text-stone leading-relaxed">
+                                    ◆ Two-tiered cake or cutting cake ◆ Sheet cake or petit fours ◆ Two flavors of your choice. Thoughtfully crafted
+                                    desserts that feel celebratory and personal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">Comfort, Support & Convenience</h4>
+                                <p class="text-stone leading-relaxed">
+                                    ✓ Dedicated on-site venue representative ✓ Restrooms and convenient parking for guests. You're supported from
+                                    start to finish.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                                    >
+                                    </path><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">Garden Games & Guest Experience</h4>
+                                <p class="text-stone leading-relaxed">
+                                    ✓ Giant Jenga ✓ Connect Four ✓ Cornhole. Perfect for relaxed mingling and joyful moments throughout the day.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personalize Your Celebration -->
+                <div class="mt-20 text-center max-w-3xl mx-auto">
+                    <h3 class="font-serif text-3xl text-charcoal mb-6">Personalize Your Celebration</h3>
+                    <div class="w-16 h-0.5 bg-sage mx-auto mb-6"></div>
+                    <p class="text-stone text-lg mb-6">
+                        Himaya Garden offers optional custom décor and entertainment upgrades designed to elevate your event's ambiance while keeping
+                        planning simple.
+                    </p>
+                    <p class="text-charcoal font-serif text-xl mb-4">Optional enhancements include:</p>
+                    <ul class="text-stone space-y-2 mb-6">
+                        <li>◆ Elegant centerpieces</li>
+                        <li>◆ Table runners and chair bows</li>
+                        <li>◆ Balloon décor for statement moments</li>
+                        <li>◆ Photo booth experiences in partnership with our friends at Desert Sky Party Rentals</li>
+                    </ul>
+                    <p class="text-stone">
+                        These enhancements are perfect for hosts who want their event to feel even more reflective of their vision, style, and story.
+                    </p>
+                    <p class="text-stone italic mt-4 text-sm">Pricing for décor and entertainment upgrades is available upon request.</p>
+                </div>
+
+                <!-- If you're looking for... -->
+                <div class="mt-20 bg-sage/5 rounded-2xl p-10 text-center max-w-3xl mx-auto border border-sage/20">
+                    <p class="font-serif text-2xl text-charcoal mb-6">If you're looking for:</p>
+                    <ul class="text-stone space-y-3 mb-8">
+                        <li class="flex items-center justify-center gap-2">
+                            <span class="text-sage">◆</span> An intimate events venue in Tucson that feels personal, not commercial...
+                        </li>
+                        <li class="flex items-center justify-center gap-2">
+                            <span class="text-sage">◆</span> A full-service experience with trusted partners...
+                        </li>
+                        <li class="flex items-center justify-center gap-2">
+                            <span class="text-sage">◆</span> A space rooted in hospitality, culture, and care...
+                        </li>
+                        <li class="flex items-center justify-center gap-2">
+                            <span class="text-sage">◆</span> A celebration that feels effortless yet elevated...
+                        </li>
+                    </ul>
+                    <p class="font-serif text-xl text-charcoal">
+                        Then Himaya Garden is the perfect place for you to celebrate love and create memories that will last a lifetime.
+                    </p>
+                </div>
+
+                <!-- Ready to Celebrate CTA -->
+                <div class="mt-16 text-center">
+                    <h3 class="font-serif text-2xl text-charcoal mb-4">Ready to Celebrate at One of Tucson's Most Loved Event Places?</h3>
+                    <p class="text-stone text-lg">We'd be honored to host your wedding, reception, or special celebration at Himaya Garden</p>
+                    <p class="text-stone text-sm mt-3">
+                        Please note: Local tax and a 20% gratuity are added to the total amount for our service staff.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                        <a href="/contact" class="btn-primary">Inquire Here</a>
+                        <a href="/contact" class="btn-secondary">Schedule a Tour</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Tea House Collection -->
+        <section id="tea-house-collection" class="py-24 bg-cream scroll-mt-24">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center mb-16">
+                    <p class="section-label fade-in">Indoor Gatherings · Tea House</p>
+                    <h2 class="fade-in delay-1 font-serif text-3xl md:text-5xl font-medium tracking-tight leading-tight text-charcoal">
+                        The Tea House Collection
+                    </h2>
+                    <p class="fade-in delay-2 text-stone mt-2 text-sm tracking-wider uppercase">
+                        An Elegant Tea House Events Place in Tucson, Arizona
+                    </p>
+                    <p class="max-w-2xl mx-auto text-stone text-lg mt-6 leading-relaxed">
+                        Host a charming, intimate gathering at Himaya Garden — a beloved tea house and events venue in Tucson, Arizona — where
+                        thoughtful hospitality, beautiful tablescapes, and unforgettable flavors come together.
+                    </p>
+                    <p class="font-serif text-2xl text-charcoal mt-10">A Tea Party Experience Designed to Feel Effortless</p>
+                    <p class="text-stone max-w-2xl mx-auto mt-3">
+                        The Tea House Collection is perfect for hosts who want a refined yet relaxed celebration — one where every detail feels
+                        intentional and every guest feels cared for.
+                    </p>
+                </div>
+
+                <!-- Event Types Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center mb-20">
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal">Tea Parties</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal">Bridal and Wedding Showers</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                                >
+                                </path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal">Rehearsal Dinners</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 10c-3.183 0-6.22.62-9 1.745M19 21h2a2 2 0 002-2v-7a2 2 0 00-2-2h-2M7 21H5a2 2 0 01-2-2v-7a2 2 0 012-2h2m2-4h6a2 2 0 012 2v2H9V7a2 2 0 012-2z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal">Corporate Gatherings</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal">Birthday Celebrations</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal">Intimate Milestone Events</p>
+                    </div>
+                </div>
+
+                <!-- What's Included Tea House -->
+                <div class="text-center mb-12">
+                    <h3 class="font-serif text-3xl md:text-4xl text-charcoal mb-4">What's Included in the Tea House Collection</h3>
+                    <div class="w-20 h-0.5 bg-sage mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">Three-Hour Venue Rental</h4>
+                                <p class="text-stone leading-relaxed">
+                                    Choose the time that works best for your gathering: ◆ 11:00 AM - 1:00 PM ◆ 2:00 PM - 4:00 PM. Includes: ✓ 30
+                                    minutes before your start time for decorating ✓ 30 minutes after to gather belongings. If these times don't work
+                                    for your event, alternative options may be available upon inquiry, subject to scheduling and venue approval.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">Tables, Seating & Styling</h4>
+                                <p class="text-stone leading-relaxed">
+                                    ✓ Tables and chairs included ✓ Ivory linens ✓ Complete tableware and glassware ✓ Simple centerpieces included.
+                                    Everything is set beautifully so your event feels polished and welcoming.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">High Tea Service & In-House Catering</h4>
+                                <p class="text-stone leading-relaxed">
+                                    As a tea house at heart, this is where Himaya Garden truly shines. Your event includes served table service, tea
+                                    service, and catering, with your choice of: ◆ Filipino-inspired High Tea ◆ Classic High Tea. Both menus are
+                                    thoughtfully curated and served to your guests, creating a refined yet relaxed experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-warm-white rounded-xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md border border-stone/5 group"
+                    >
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-2xl text-charcoal mb-3">On-Site Support & Guest Comfort</h4>
+                                <p class="text-stone leading-relaxed">
+                                    ◆ Dedicated on-site venue representative ◆ Restrooms and convenient parking for guests. Our team is there to
+                                    ensure your event flows smoothly from start to finish.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customized Desserts & Décor -->
+                <div class="mt-20 text-center max-w-3xl mx-auto">
+                    <h3 class="font-serif text-3xl text-charcoal mb-4">
+                        Customized Desserts & Décor <span class="text-lg text-stone">(Optional Enhancements)</span>
+                    </h3>
+                    <div class="w-16 h-0.5 bg-sage mx-auto mb-6"></div>
+                    <p class="text-stone text-lg mb-10">
+                        To personalize your tea party even further, we offer optional upgrades designed to elevate your event while keeping planning
+                        simple.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-cream-warm rounded-xl p-6 text-center border border-stone/5">
+                            <p class="font-serif text-xl text-charcoal mb-2">Custom desserts</p>
+                            <p class="text-stone text-sm">(availability and pricing upon request)</p>
+                        </div>
+                        <div class="bg-cream-warm rounded-xl p-6 text-center border border-stone/5">
+                            <p class="font-serif text-xl text-charcoal mb-2">Customized décor, such as:</p>
+                            <p class="text-stone text-sm">◆ Enhanced centerpieces ◆ Table runners ◆ Chair bows ◆ Balloon décor</p>
+                        </div>
+                        <div class="bg-cream-warm rounded-xl p-6 text-center border border-stone/5">
+                            <p class="font-serif text-xl text-charcoal mb-2">Photo-worthy décor enhancements</p>
+                            <p class="text-stone text-sm">Through our trusted partners at Desert Sky Party Rentals</p>
+                        </div>
+                        <div class="bg-cream-warm rounded-xl p-6 text-center border border-stone/5">
+                            <p class="font-serif text-xl text-charcoal mb-2">Additional hour of event time</p>
+                            <p class="text-stone text-sm">(availability and pricing upon request)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Looking to have an intimate celebration? -->
+                <div class="mt-20 bg-sage/5 rounded-2xl p-10 text-center max-w-3xl mx-auto border border-sage/20">
+                    <p class="font-serif text-2xl text-charcoal mb-6">Looking to have an intimate celebration?</p>
+                    <p class="text-stone mb-4">Hosts choose Himaya Garden because they want:</p>
+                    <ul class="text-stone space-y-2 mb-8 text-left max-w-sm mx-auto">
+                        <li class="flex items-center gap-2"><span class="text-sage">-</span> A tea house in Tucson that feels elegant, not stuffy</li>
+                        <li class="flex items-center gap-2"><span class="text-sage">-</span> A fully supported, stress-free event</li>
+                        <li class="flex items-center gap-2"><span class="text-sage">-</span> Beautiful food and thoughtful service</li>
+                        <li class="flex items-center gap-2"><span class="text-sage">-</span> A space that feels intimate, welcoming, and special</li>
+                    </ul>
+                    <p class="text-stone">As a family-owned events venue and tea house in Tucson, Arizona, we bring heart into every gathering.</p>
+                    <div class="mt-10 pt-6 border-t border-sage/20">
+                        <h4 class="font-serif text-2xl text-charcoal mb-3">Ready to Host Your Tea Party?</h4>
+                        <p class="text-stone">We'd love to help you create a tea party or intimate event your guests will remember.</p>
+                        <p class="text-stone text-sm mt-3">
+                            Please note: Local tax and a 20% gratuity are added to the total amount for our service staff.
+                        </p>
+                        <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                            <a href="/contact" class="btn-primary">Inquire Here</a>
+                            <a href="/contact" class="btn-secondary">Talk to Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="py-20 bg-cream-warm text-center">
+            <div class="max-w-2xl mx-auto px-6">
+                <p class="font-serif text-3xl md:text-4xl text-charcoal mb-3">tying the knot soon?</p>
+                <p class="text-stone text-lg mb-8">
+                    Join our newsletter and get first dibs on all the Fun and sweet things we have for your "future" wedding venue.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        class="flex-1 px-5 py-3 rounded-full border border-stone/30 bg-white focus:outline-none focus:ring-2 focus:ring-sage/50"
+                    />
+                    <button type="submit" class="btn-primary whitespace-nowrap px-8">Subscribe</button>
+                </form>
+                <p class="text-stone text-sm mt-5 italic">Thank you for subscribing!</p>
+            </div>
+        </section>
+
+        <!-- Final CTA with Background Image -->
+        <section class="relative py-32 text-center text-white overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="/img/AG1_4.jpg" alt="Himaya Garden sunset" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-charcoal/50 z-[1]"></div>
+            <div class="relative z-[2] max-w-3xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <h2 class="fade-in font-serif text-4xl md:text-6xl font-medium tracking-tight leading-tight mb-6">Ready to Reserve Your Date?</h2>
+                <p class="fade-in delay-1 text-lg leading-relaxed mb-8 text-white/90">
+                    Dates fill quickly, especially during peak season (October–April). Let's talk about your vision and find the perfect collection
+                    for your gathering.
+                </p>
+                <div class="fade-in delay-2 flex flex-wrap gap-4 justify-center">
+                    <a href="/contact" class="btn-primary bg-white text-charcoal hover:bg-charcoal hover:text-white transition-all">
+                        Schedule a Tour
+                    </a>
+                    <a href="tel:+15204671033" class="btn-secondary border-white/30 text-white hover:bg-white hover:text-charcoal transition-all">
+                        Call (520) 467-1033
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>

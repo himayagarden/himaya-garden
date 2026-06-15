@@ -1,0 +1,249 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sage: #8B9A7D;
+  --color-sage-dark: #6B7A5D;
+  --color-sand: #C4A882;
+  --color-cream: #F7F3EE;
+  --color-cream-warm: #FAF8F5;
+  --color-terracotta: #B8906A;
+  --color-gold: #D4A574;
+  --color-charcoal: #2D2D2D;
+  --color-stone: #5C5C5C;
+  --color-warm-white: #FDFCFA;
+
+  --font-family-serif: "Cormorant Garamond", Georgia, serif;
+  --font-family-sans: Inter, system-ui, sans-serif;
+
+  --animate-bounce-slow: bounce-slow 2s infinite;
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  body {
+    @apply font-sans font-light tracking-wide bg-cream text-charcoal leading-relaxed overflow-x-hidden w-full;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium tracking-tight leading-tight;
+  }
+
+  ::selection {
+    background-color: rgba(139, 154, 125, 0.3);
+    color: #2D2D2D;
+  }
+
+  img {
+    @apply max-w-full block;
+  }
+
+  a {
+    @apply no-underline text-inherit;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 xl:px-32;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-sage text-white font-sans font-medium text-sm tracking-widest uppercase rounded-sm transition-all duration-[600ms] ease-out border-none cursor-pointer whitespace-nowrap shrink-0;
+  }
+
+  .btn-primary:hover {
+    @apply bg-sage-dark shadow-[0_10px_30px_rgba(139,154,125,0.2)];
+  }
+
+  .btn-primary:active {
+    @apply scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 border border-charcoal/20 text-charcoal font-sans font-medium text-sm tracking-widest uppercase rounded-sm transition-all duration-[600ms] ease-out bg-transparent cursor-pointer whitespace-nowrap shrink-0;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-charcoal text-white border-charcoal;
+  }
+
+  .btn-secondary:active {
+    @apply scale-95;
+  }
+
+  .btn-row {
+    @apply flex flex-wrap gap-4 items-center;
+  }
+
+  .section-label {
+    @apply text-sage text-sm tracking-[0.3em] uppercase mb-6;
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl lg:text-6xl text-charcoal font-light mb-8;
+  }
+}
+
+@layer utilities {
+  .fade-in {
+    @apply opacity-0 translate-y-8 transition-all duration-[1200ms] ease-out;
+  }
+
+  .fade-in.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .delay-1 { transition-delay: 0.2s; }
+  .delay-2 { transition-delay: 0.4s; }
+  .delay-3 { transition-delay: 0.6s; }
+  .delay-4 { transition-delay: 0.8s; }
+  .delay-5 { transition-delay: 1s; }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Floating Action Buttons */
+.floating-actions {
+    position: fixed;
+    bottom: 2rem;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.floating-right {
+    right: 1.5rem;
+    align-items: flex-end;
+}
+
+.floating-left {
+    left: 1.5rem;
+    align-items: flex-start;
+}
+
+.floating-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 9999px;
+    background-color: white;
+    color: #333d29; /* charcoal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(163, 177, 138, 0.2);
+}
+
+.floating-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #a3b18a; /* sage */
+    color: white;
+    border-color: #a3b18a;
+}
+
+.floating-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px) scale(0.8);
+}
+
+/* Specific button colors */
+.floating-call:hover {
+    background-color: #a3b18a;
+}
+
+.floating-instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: transparent;
+}
+
+.floating-maps {
+    width: auto;
+    padding: 0 1.25rem;
+    gap: 0.5rem;
+}
+
+.floating-maps:hover {
+    background-color: #4285f4;
+    border-color: #4285f4;
+}
+
+/* Animation for buttons appearing */
+.floating-btn {
+    animation: floatIn 0.5s ease backwards;
+}
+
+.floating-btn:nth-child(1) { animation-delay: 0.1s; }
+.floating-btn:nth-child(2) { animation-delay: 0.2s; }
+.floating-btn:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+    .floating-actions {
+        bottom: 1.5rem;
+    }
+    
+    .floating-right {
+        right: 1rem;
+    }
+    
+    .floating-left {
+        left: 1rem;
+    }
+    
+    .floating-btn {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .floating-maps {
+        width: 3rem;
+        padding: 0;
+    }
+    
+    .floating-maps span {
+        display: none;
+    }
+}
+
+/* Ensure footer doesn't get covered
+body {
+    padding-bottom: 6rem;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding-bottom: 5rem;
+    }
+} */
+

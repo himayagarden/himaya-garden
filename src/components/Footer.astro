@@ -1,0 +1,188 @@
+---
+const exploreLinks = [
+    { href: '/about', label: 'About Us' },
+    { href: '/events', label: 'Events' },
+    { href: '/gallery', label: 'Gallery' },
+    { href: '/contact', label: 'Book a Tour' },
+];
+
+const socials = [
+    { href: '#', label: 'Instagram' },
+    { href: '#', label: 'Facebook' },
+    { href: '#', label: 'Pinterest' },
+];
+---
+
+<style>
+    .site-footer {
+        background-color: var(--color-charcoal);
+        color: rgba(247, 243, 238, 0.8);
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    @media (min-width: 768px) {
+        .site-footer {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    .footer-inner {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    .footer-grid {
+        display: grid;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    @media (min-width: 768px) {
+        .footer-grid {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+    }
+
+    .footer-brand a {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.875rem;
+        color: var(--color-cream);
+        font-weight: 500;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-brand p {
+        color: rgba(247, 243, 238, 0.6);
+        font-weight: 300;
+        line-height: 1.7;
+        max-width: 24rem;
+    }
+
+    .footer-col h4 {
+        font-family: 'Cormorant Garamond', serif;
+        color: var(--color-cream);
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+
+    .footer-col ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .footer-col a {
+        color: rgba(247, 243, 238, 0.6);
+        font-size: 0.875rem;
+        transition: color 0.4s ease;
+    }
+
+    .footer-col a:hover {
+        color: var(--color-sage);
+    }
+
+    .footer-col address {
+        font-style: normal;
+        color: rgba(247, 243, 238, 0.6);
+        font-size: 0.875rem;
+        line-height: 1.7;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-phone {
+        color: var(--color-cream);
+        font-size: 1.125rem;
+        font-weight: 500;
+        display: block;
+        margin-top: 0.5rem;
+        transition: color 0.4s ease;
+    }
+
+    .footer-phone:hover {
+        color: var(--color-sage);
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(247, 243, 238, 0.1);
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .footer-bottom {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .footer-bottom p {
+        color: rgba(247, 243, 238, 0.4);
+        font-size: 0.875rem;
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .footer-socials a {
+        color: rgba(247, 243, 238, 0.4);
+        font-size: 0.875rem;
+        transition: color 0.4s ease;
+    }
+
+    .footer-socials a:hover {
+        color: var(--color-sage);
+    }
+</style>
+
+<footer class="site-footer">
+    <div class="section-padding footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand" style="grid-column: span 2;">
+                <a href="/">Himaya Garden</a>
+                <p>
+                    A desert sanctuary for meaningful gatherings in Tucson, Arizona. Rooted in Filipino heritage, designed for intentional
+                    celebration.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    {
+                        exploreLinks.map((link) => (
+                            <li>
+                                <a href={link.href}>{link.label}</a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Visit</h4>
+                <address>
+                    <span>Tucson, Arizona</span>
+                    <a href="mailto:hello@himayagarden.com">hello@himayagarden.com</a>
+                    <a href="tel:+15201234567" class="footer-phone">(520) 123-4567</a>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Himaya Garden. All rights reserved.</p>
+            <div class="footer-socials">
+                {socials.map((social) => <a href={social.href}>{social.label}</a>)}
+            </div>
+        </div>
+    </div>
+</footer>

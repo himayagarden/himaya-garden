@@ -1,0 +1,1223 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+    title="Private High Tea — Himaya Garden"
+    description="Experience an elegant private high tea at Himaya Garden in Tucson, Arizona. Filipino-inspired and Classic High Tea menus for intimate gatherings, showers, and celebrations."
+>
+    <main>
+        <!-- Page Header -->
+        <section class="pt-32 pb-20 bg-cream">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32 text-center">
+                <p class="section-label fade-in">Tea House Experience</p>
+                <h1 class="fade-in delay-1 font-serif text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-tight text-charcoal mb-6">
+                    Private High Tea
+                </h1>
+                <p class="fade-in delay-2 text-lg text-stone leading-relaxed max-w-2xl mx-auto mb-10">
+                    An intimate, elegant gathering where thoughtful hospitality, beautiful tablescapes, and unforgettable flavors come together in our
+                    Tucson tea house.
+                </p>
+
+                <!-- Quick Nav -->
+                <div class="fade-in delay-3 flex flex-wrap justify-center gap-3">
+                    <a
+                        href="#filipino-menu"
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage/10 text-sage hover:bg-sage hover:text-white transition-all font-medium text-sm tracking-wide"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                            >
+                            </path>
+                        </svg>
+                        Filipino Inspired
+                    </a>
+                    <a
+                        href="#classic-menu"
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage/10 text-sage hover:bg-sage hover:text-white transition-all font-medium text-sm tracking-wide"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                        Classic High Tea
+                    </a>
+                    <a
+                        href="#video-gallery"
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage/10 text-sage hover:bg-sage hover:text-white transition-all font-medium text-sm tracking-wide"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                            >
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Watch the Experience
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="py-24 bg-cream">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-3xl md:text-5xl font-medium tracking-tight leading-tight text-charcoal mb-8">
+                        A Tea Party Experience Designed to Feel Effortless
+                    </h2>
+                    <div class="space-y-6 text-stone text-lg leading-relaxed">
+                        <p>
+                            The Tea House Collection is perfect for hosts who want a refined yet relaxed celebration — one where every detail feels
+                            intentional and every guest feels cared for.
+                        </p>
+                        <p>
+                            Choose between our <span class="text-charcoal font-medium">Filipino Inspired High Tea</span> or <span
+                                class="text-charcoal font-medium"
+                            >
+                                Classic High Tea
+                            </span> menu, each thoughtfully curated and served to your guests in the elegant setting of our Tucson tea house.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Slider Section - Multi-Video Horizontal Layout -->
+        <section id="video-gallery" class="py-24 bg-cream-warm scroll-mt-24">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center mb-16">
+                    <p class="section-label fade-in">See It Come to Life</p>
+                    <h2 class="fade-in delay-1 font-serif text-3xl md:text-5xl font-medium tracking-tight leading-tight text-charcoal">
+                        The High Tea Experience
+                    </h2>
+                    <p class="fade-in delay-2 text-stone mt-4 max-w-2xl mx-auto text-lg leading-relaxed">
+                        Step inside our tea house. Watch how we craft each gathering with care, from the tablescapes to the final sip.
+                    </p>
+                </div>
+
+                <!-- Multi-Video Horizontal Slider -->
+                <div class="video-slider" data-autoplay="true" data-interval="6000">
+                    <!-- Slider Track -->
+                    <div class="slider-track-wrapper overflow-hidden">
+                        <div class="slider-track flex transition-transform duration-700 ease-in-out h-[70vh] md:h-[80vh]">
+                            <!-- Video Slide 1 -->
+                            <div class="slider-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
+                                <div class="relative rounded-xl overflow-hidden bg-charcoal group h-full">
+                                    <div class="h-full relative">
+                                        <video
+                                            src="/videos/tea-house-tour.mp4"
+                                            poster="/img/high-tea/tea-house-poster.jpg"
+                                            class="slide-video w-full h-full object-cover"
+                                            playsinline
+                                            muted
+                                            loop
+                                            autoplay
+                                            preload="metadata"
+                                        >
+                                        </video>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-5">
+                                            <p class="text-white/70 text-xs uppercase tracking-wider mb-1">Experience</p>
+                                            <h3 class="font-serif text-xl text-white">Welcome to the Tea House</h3>
+                                        </div>
+                                        <!-- Play overlay on hover -->
+                                        <div
+                                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal/20"
+                                        >
+                                            <div class="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center text-charcoal">
+                                                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video Slide 2 -->
+                            <div class="slider-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
+                                <div class="relative rounded-xl overflow-hidden bg-charcoal group h-full">
+                                    <div class="aspect-[9/16] md:aspect-[3/4] relative">
+                                        <video
+                                            src="/videos/filipino-high-tea.mp4"
+                                            poster="/img/high-tea/filipino-tea-poster.jpg"
+                                            class="slide-video w-full h-full object-cover"
+                                            playsinline
+                                            muted
+                                            loop
+                                            preload="metadata"
+                                        >
+                                        </video>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-5">
+                                            <p class="text-white/70 text-xs uppercase tracking-wider mb-1">Menu</p>
+                                            <h3 class="font-serif text-xl text-white">Filipino Inspired High Tea</h3>
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal/20"
+                                        >
+                                            <div class="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center text-charcoal">
+                                                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video Slide 3 -->
+                            <div class="slider-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
+                                <div class="relative rounded-xl overflow-hidden bg-charcoal group h-full">
+                                    <div class="aspect-[9/16] md:aspect-[3/4] relative">
+                                        <video
+                                            src="/videos/classic-high-tea.mp4"
+                                            poster="/img/high-tea/classic-tea-poster.jpg"
+                                            class="slide-video w-full h-full object-cover"
+                                            playsinline
+                                            muted
+                                            loop
+                                            preload="metadata"
+                                        >
+                                        </video>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-5">
+                                            <p class="text-white/70 text-xs uppercase tracking-wider mb-1">Menu</p>
+                                            <h3 class="font-serif text-xl text-white">Classic High Tea Service</h3>
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal/20"
+                                        >
+                                            <div class="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center text-charcoal">
+                                                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video Slide 4 -->
+                            <div class="slider-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
+                                <div class="relative rounded-xl overflow-hidden bg-charcoal group h-full">
+                                    <div class="aspect-[9/16] md:aspect-[3/4] relative">
+                                        <video
+                                            src="/videos/tablescape-design.mp4"
+                                            poster="/img/high-tea/tablescape-poster.jpg"
+                                            class="slide-video w-full h-full object-cover"
+                                            playsinline
+                                            muted
+                                            loop
+                                            preload="metadata"
+                                        >
+                                        </video>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-5">
+                                            <p class="text-white/70 text-xs uppercase tracking-wider mb-1">Behind the Scenes</p>
+                                            <h3 class="font-serif text-xl text-white">Art of the Tablescape</h3>
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal/20"
+                                        >
+                                            <div class="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center text-charcoal">
+                                                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video Slide 5 -->
+                            <div class="slider-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
+                                <div class="relative rounded-xl overflow-hidden bg-charcoal group h-full">
+                                    <div class="aspect-[9/16] md:aspect-[3/4] relative">
+                                        <video
+                                            src="/videos/tea-prep.mp4"
+                                            poster="/img/high-tea/tea-prep-poster.jpg"
+                                            class="slide-video w-full h-full object-cover"
+                                            playsinline
+                                            muted
+                                            loop
+                                            preload="metadata"
+                                        >
+                                        </video>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-5">
+                                            <p class="text-white/70 text-xs uppercase tracking-wider mb-1">Preparation</p>
+                                            <h3 class="font-serif text-xl text-white">Brewing the Perfect Cup</h3>
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal/20"
+                                        >
+                                            <div class="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center text-charcoal">
+                                                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video Slide 6 -->
+                            <div class="slider-item flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
+                                <div class="relative rounded-xl overflow-hidden bg-charcoal group h-full">
+                                    <div class="aspect-[9/16] md:aspect-[3/4] relative">
+                                        <video
+                                            src="/videos/guest-experience.mp4"
+                                            poster="/img/high-tea/guest-experience-poster.jpg"
+                                            class="slide-video w-full h-full object-cover"
+                                            playsinline
+                                            muted
+                                            loop
+                                            preload="metadata"
+                                        >
+                                        </video>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-5">
+                                            <p class="text-white/70 text-xs uppercase tracking-wider mb-1">Atmosphere</p>
+                                            <h3 class="font-serif text-xl text-white">A Guest's Perspective</h3>
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-charcoal/20"
+                                        >
+                                            <div class="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center text-charcoal">
+                                                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M8 5v14l11-7z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="flex items-center justify-center gap-6 mt-8">
+                        <button
+                            class="slider-prev w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center text-sage hover:bg-sage hover:text-white transition-all"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+
+                        <!-- Progress Dots -->
+                        <div class="slider-dots flex items-center gap-2">
+                            <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+                            <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
+                            <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <button
+                            class="slider-next w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center text-sage hover:bg-sage hover:text-white transition-all"
+                        >
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <p class="text-center text-stone text-sm mt-4">Swipe or drag to explore more videos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filipino Inspired High Tea -->
+        <section id="filipino-menu" class="py-24 bg-cream scroll-mt-24">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center mb-16">
+                    <p class="section-label fade-in">Heritage & Heart</p>
+                    <h2 class="fade-in delay-1 font-serif text-3xl md:text-5xl font-medium tracking-tight leading-tight text-charcoal">
+                        Filipino Inspired High Tea
+                    </h2>
+                    <p class="fade-in delay-2 text-stone mt-4 max-w-2xl mx-auto text-lg leading-relaxed">
+                        A celebration of Filipino flavors reimagined through the elegance of high tea service. Bold, comforting, and beautifully
+                        presented.
+                    </p>
+                </div>
+
+                <!-- Food Image Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                    <div class="rounded-xl overflow-hidden aspect-square">
+                        <img
+                            src="/img/high-tea/lumpia.jpg"
+                            alt="Chef's Lumpia Sariwa"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+                    <div class="rounded-xl overflow-hidden aspect-square">
+                        <img
+                            src="/img/high-tea/chicken-adobo.jpg"
+                            alt="Chicken Adobo with Lemongrass Rice"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+                    <div class="rounded-xl overflow-hidden aspect-square">
+                        <img
+                            src="/img/high-tea/pancit.jpg"
+                            alt="Cebuano-Style Pancit"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+                    <div class="rounded-xl overflow-hidden aspect-square">
+                        <img
+                            src="/img/high-tea/ube-biko.jpg"
+                            alt="Ube Black Rice Biko"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+                </div>
+
+                <!-- Menu Details -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Savory -->
+                    <div class="bg-warm-white rounded-xl p-8 shadow-sm border border-stone/5">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="font-serif text-2xl text-charcoal">Savory</h3>
+                        </div>
+                        <ul class="space-y-3 text-stone leading-relaxed">
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Tofu Sisig</strong> — A plant-forward take on the classic sizzling dish</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Chef's Lumpia Sariwa with Turkey</strong> — Fresh, hand-rolled spring rolls</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Chicken Adobo</strong> with Lemongrass Rice and Carrot & Papaya Atsara</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Cebuano-Style Pancit</strong> with Seasonal Vegetables</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Sweet -->
+                    <div class="bg-warm-white rounded-xl p-8 shadow-sm border border-stone/5">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="font-serif text-2xl text-charcoal">Sweet</h3>
+                        </div>
+                        <ul class="space-y-3 text-stone leading-relaxed">
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Ube Black Rice Biko</strong> — Creamy, earthy, and deeply comforting</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Chocolate Coconut Truffles</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Lemon Cakelettes</strong> by Dragonfly Cakes®</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Chocolate Covered Strawberries</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span>Selection of <strong class="text-charcoal">Dragonfly Cakes® Tea Cakes</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span>Fresh <strong class="text-charcoal">Seasonal Fruit</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sip Section -->
+                <div class="mt-12 bg-sage/5 rounded-2xl p-10 max-w-4xl mx-auto border border-sage/20">
+                    <div class="flex items-center gap-3 mb-6 justify-center">
+                        <div class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-serif text-2xl text-charcoal">Sip</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-sage font-medium text-sm uppercase tracking-wider mb-3">Cool</p>
+                            <ul class="space-y-2 text-stone">
+                                <li>Prickly Pear Herbal Tea</li>
+                                <li>Chai</li>
+                                <li>Green Tea</li>
+                                <li><strong class="text-charcoal">Salabat</strong> — Ginger and Honey Tea</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-sage font-medium text-sm uppercase tracking-wider mb-3">Warm</p>
+                            <ul class="space-y-2 text-stone">
+                                <li>Chai</li>
+                                <li>Vanilla Black Tea</li>
+                                <li>Green Tea</li>
+                                <li>Island Berry Herbal Tea</li>
+                                <li><strong class="text-charcoal">Salabat</strong> — Ginger and Honey Tea</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-center text-stone italic mt-8 text-sm">(Vegan and GF menu adaptations made by request)</p>
+            </div>
+        </section>
+
+        <!-- Classic High Tea -->
+        <section id="classic-menu" class="py-24 bg-cream-warm scroll-mt-24">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center mb-16">
+                    <p class="section-label fade-in">Timeless Elegance</p>
+                    <h2 class="fade-in delay-1 font-serif text-3xl md:text-5xl font-medium tracking-tight leading-tight text-charcoal">
+                        Classic High Tea
+                    </h2>
+                    <p class="fade-in delay-2 text-stone mt-4 max-w-2xl mx-auto text-lg leading-relaxed">
+                        The tradition of afternoon tea, elevated. Delicate sandwiches, housemade scones, and refined sweets served with curated teas
+                        from Maya Tea.
+                    </p>
+                </div>
+
+                <!-- Tea Stand Images -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 max-w-4xl mx-auto">
+                    <div class="rounded-xl overflow-hidden aspect-[3/4]">
+                        <img
+                            src="/img/high-tea/classic-stand-1.jpg"
+                            alt="Classic High Tea Three-Tier Stand"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+                    <div class="rounded-xl overflow-hidden aspect-[3/4]">
+                        <img
+                            src="/img/high-tea/classic-stand-2.jpg"
+                            alt="Classic High Tea Table Setting"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+                </div>
+
+                <!-- Menu Details -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Savory -->
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-stone/5">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="font-serif text-2xl text-charcoal">Savory</h3>
+                        </div>
+                        <ul class="space-y-3 text-stone leading-relaxed">
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Classic Cucumber and Cream Cheese Sandwiches</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Smoked Salmon with Dill and Lemon</strong> on Sourdough</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Seasonal Quiche</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Bruschetta</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Sweet -->
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-stone/5">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="font-serif text-2xl text-charcoal">Sweet</h3>
+                        </div>
+                        <ul class="space-y-3 text-stone leading-relaxed">
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Ube Biko</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Cassava Cake</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Dragonfly Cakes® Tea Cakes</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span>Fresh <strong class="text-charcoal">Seasonal Fruits</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Chocolate Covered Strawberries</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span><strong class="text-charcoal">Trifles</strong></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-sage mt-1">◆</span>
+                                <span>
+                                    <strong class="text-charcoal">Traditional Plain and Seasonal Scones</strong>, served with Clotted Cream and
+                                    Homemade Jam
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sip Section -->
+                <div class="mt-12 bg-sage/5 rounded-2xl p-10 max-w-4xl mx-auto border border-sage/20 text-center">
+                    <div class="flex items-center gap-3 mb-6 justify-center">
+                        <div class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-serif text-2xl text-charcoal">Sip</h3>
+                    </div>
+                    <p class="text-sage font-medium text-sm uppercase tracking-wider mb-3">Tea Selection</p>
+                    <p class="text-stone leading-relaxed mb-4">
+                        Delicious caffeinated and herbal teas from <strong class="text-charcoal">Maya Tea</strong>
+                    </p>
+                    <p class="text-stone leading-relaxed">Sparkling Lemonade & Seasonal Juice</p>
+                </div>
+
+                <p class="text-center text-stone italic mt-8 text-sm">(Vegan and GF menu adaptations made by request)</p>
+            </div>
+        </section>
+
+        <!-- Perfect For Section -->
+        <section class="py-24 bg-cream">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center mb-16">
+                    <h2 class="font-serif text-3xl md:text-4xl text-charcoal mb-4">Perfect For</h2>
+                    <div class="w-20 h-0.5 bg-sage mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal text-sm">Tea Parties</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal text-sm">Bridal Showers</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                                >
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal text-sm">Rehearsal Dinners</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 10c-3.183 0-6.22.62-9 1.745M19 21h2a2 2 0 002-2v-7a2 2 0 00-2-2h-2M7 21H5a2 2 0 01-2-2v-7a2 2 0 012-2h2m2-4h6a2 2 0 012 2v2H9V7a2 2 0 012-2z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal text-sm">Corporate Gatherings</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal text-sm">Birthday Celebrations</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-5 shadow-sm hover:-translate-y-1 transition-all border border-stone/5">
+                        <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                                >
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="font-serif text-charcoal text-sm">Milestone Events</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Included -->
+        <section class="py-24 bg-cream-warm">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center mb-16">
+                    <h2 class="font-serif text-3xl md:text-4xl text-charcoal mb-4">What's Included</h2>
+                    <div class="w-20 h-0.5 bg-sage mx-auto mb-6"></div>
+                    <p class="text-stone max-w-2xl mx-auto text-lg">
+                        Every Private High Tea gathering includes thoughtful details that make hosting effortless.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-stone/5 group hover:-translate-y-1 transition-all">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-charcoal mb-2">Three-Hour Venue Rental</h4>
+                                <p class="text-stone leading-relaxed text-sm">
+                                    Choose your preferred time: 11:00 AM — 1:00 PM or 2:00 PM — 4:00 PM. Includes 30 minutes before for decorating and
+                                    30 minutes after to gather belongings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-stone/5 group hover:-translate-y-1 transition-all">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-charcoal mb-2">Tables, Seating & Styling</h4>
+                                <p class="text-stone leading-relaxed text-sm">
+                                    Tables and chairs, ivory linens, complete tableware and glassware, and simple centerpieces included. Everything
+                                    set beautifully so your event feels polished.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-stone/5 group hover:-translate-y-1 transition-all">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-charcoal mb-2">High Tea Service & Catering</h4>
+                                <p class="text-stone leading-relaxed text-sm">
+                                    Your choice of Filipino Inspired or Classic High Tea menu. Served tableside with full tea service, creating a
+                                    refined yet relaxed experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-stone/5 group hover:-translate-y-1 transition-all">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-sage/10 flex items-center justify-center text-sage shrink-0 group-hover:bg-sage group-hover:text-white transition-all"
+                            >
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                                    >
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-charcoal mb-2">On-Site Support</h4>
+                                <p class="text-stone leading-relaxed text-sm">
+                                    Dedicated venue representative, restrooms, and convenient parking for guests. Our team ensures your event flows
+                                    smoothly from start to finish.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional Enhancements -->
+        <section class="py-24 bg-cream">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-serif text-3xl text-charcoal mb-4">Customized Desserts & Décor</h2>
+                    <p class="text-lg text-stone">Optional Enhancements</p>
+                    <div class="w-16 h-0.5 bg-sage mx-auto mt-6 mb-6"></div>
+                    <p class="text-stone text-lg leading-relaxed">
+                        To personalize your tea party even further, we offer optional upgrades designed to elevate your event while keeping planning
+                        simple.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                    <div class="bg-warm-white rounded-xl p-6 text-center border border-stone/5">
+                        <p class="font-serif text-xl text-charcoal mb-2">Custom desserts</p>
+                        <p class="text-stone text-sm">(availability and pricing upon request)</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-6 text-center border border-stone/5">
+                        <p class="font-serif text-xl text-charcoal mb-2">Customized décor, such as:</p>
+                        <p class="text-stone text-sm">◆ Enhanced centerpieces ◆ Table runners ◆ Chair bows ◆ Balloon décor</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-6 text-center border border-stone/5">
+                        <p class="font-serif text-xl text-charcoal mb-2">Photo-worthy décor enhancements</p>
+                        <p class="text-stone text-sm">Through our trusted partners at Desert Sky Party Rentals</p>
+                    </div>
+                    <div class="bg-warm-white rounded-xl p-6 text-center border border-stone/5">
+                        <p class="font-serif text-xl text-charcoal mb-2">Additional hour of event time</p>
+                        <p class="text-stone text-sm">(availability and pricing upon request)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-24 bg-cream-warm">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="bg-sage/5 rounded-2xl p-10 md:p-16 text-center max-w-4xl mx-auto border border-sage/20">
+                    <p class="font-serif text-2xl text-charcoal mb-6">Ready to Host Your Tea Party?</p>
+                    <p class="text-stone mb-4 max-w-xl mx-auto">
+                        We'd love to help you create a tea party or intimate event your guests will remember. As a family-owned tea house in Tucson,
+                        Arizona, we bring heart into every gathering.
+                    </p>
+                    <p class="text-stone text-sm mb-8">
+                        Please note: Local tax and a 20% gratuity are added to the total amount for our service staff.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="/contact" class="btn-primary">Inquire Here</a>
+                        <a href="/contact" class="btn-secondary">Talk to Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="py-20 bg-cream text-center">
+            <div class="max-w-2xl mx-auto px-6">
+                <p class="font-serif text-3xl md:text-4xl text-charcoal mb-3">Stay in the Loop</p>
+                <p class="text-stone text-lg mb-8">Be the first to know about seasonal tea menus, workshops, and exclusive tea house events.</p>
+                <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto" action="/api/newsletter" method="POST">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email address"
+                        required
+                        class="flex-1 px-5 py-3 rounded-full border border-stone/30 bg-white focus:outline-none focus:ring-2 focus:ring-sage/50"
+                    />
+                    <button type="submit" class="btn-primary whitespace-nowrap px-8">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Final Image CTA -->
+        <section class="relative py-32 text-center text-white overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="/img/tea-house-interior.jpg" alt="Himaya Garden Tea House Interior" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-charcoal/50 z-[1]"></div>
+            <div class="relative z-[2] max-w-3xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <h2 class="fade-in font-serif text-4xl md:text-6xl font-medium tracking-tight leading-tight mb-6">Let's Sip Together</h2>
+                <p class="fade-in delay-1 text-lg leading-relaxed mb-8 text-white/90">
+                    Reserve your date at Himaya Garden's tea house. Where every cup is served with intention and every gathering feels like coming
+                    home.
+                </p>
+                <div class="fade-in delay-2 flex flex-wrap gap-4 justify-center">
+                    <a href="/contact" class="btn-primary bg-white text-charcoal hover:bg-charcoal hover:text-white transition-all">
+                        Schedule a Tour
+                    </a>
+                    <a href="tel:+15204671033" class="btn-secondary border-white/30 text-white hover:bg-white hover:text-charcoal transition-all">
+                        Call (520) 467-1033
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Multi-Video Horizontal Slider Script -->
+    <script>
+        (function (): void {
+            const slider = document.querySelector<HTMLElement>('.video-slider');
+            if (!slider) return;
+
+            const track = slider.querySelector<HTMLElement>('.slider-track');
+            const items = slider.querySelectorAll<HTMLElement>('.slider-item');
+            const prevBtn = slider.querySelector<HTMLButtonElement>('.slider-prev');
+            const nextBtn = slider.querySelector<HTMLButtonElement>('.slider-next');
+            const dots = slider.querySelectorAll<HTMLButtonElement>('.slider-dot');
+
+            let currentIndex: number = 0;
+            let itemsPerView: number = getItemsPerView();
+            const totalItems: number = items.length;
+            let maxIndex: number = Math.max(0, totalItems - itemsPerView);
+
+            function getItemsPerView(): number {
+                if (window.innerWidth >= 1024) return 3;
+                if (window.innerWidth >= 768) return 2;
+                return 1;
+            }
+
+            function updateSlider(): void {
+                if (!track) return;
+                const itemWidth: number = 100 / itemsPerView;
+                track.style.transform = `translateX(-${currentIndex * itemWidth}%)`;
+
+                // Update dots
+                dots.forEach((dot: HTMLButtonElement, i: number) => {
+                    dot.classList.toggle('active', i === currentIndex);
+                });
+
+                // Play visible videos, pause hidden ones
+                items.forEach((item: HTMLElement, i: number) => {
+                    const video = item.querySelector<HTMLVideoElement>('video');
+                    if (i >= currentIndex && i < currentIndex + itemsPerView) {
+                        if (video) video.play().catch(() => {});
+                    } else {
+                        if (video) {
+                            video.pause();
+                            video.currentTime = 0;
+                        }
+                    }
+                });
+            }
+
+            function next(): void {
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0; // Loop back to start
+                }
+                updateSlider();
+            }
+
+            function prev(): void {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = maxIndex; // Loop to end
+                }
+                updateSlider();
+            }
+
+            function goToSlide(index: number): void {
+                currentIndex = Math.min(Math.max(index, 0), maxIndex);
+                updateSlider();
+            }
+
+            // Event listeners
+            prevBtn?.addEventListener('click', prev);
+            nextBtn?.addEventListener('click', next);
+
+            dots.forEach((dot: HTMLButtonElement, i: number) => {
+                dot.addEventListener('click', () => goToSlide(i));
+            });
+
+            // Touch / swipe support
+            let touchStartX: number = 0;
+            let touchEndX: number = 0;
+
+            track?.addEventListener(
+                'touchstart',
+                (e: TouchEvent) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                },
+                { passive: true },
+            );
+
+            track?.addEventListener(
+                'touchend',
+                (e: TouchEvent) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    const diff: number = touchStartX - touchEndX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) next();
+                        else prev();
+                    }
+                },
+                { passive: true },
+            );
+
+            // Mouse drag support
+            let isDragging: boolean = false;
+            let startX: number = 0;
+
+            track?.addEventListener('mousedown', (e: MouseEvent) => {
+                isDragging = true;
+                startX = e.pageX;
+                track.style.cursor = 'grabbing';
+            });
+
+            track?.addEventListener('mousemove', (e: MouseEvent) => {
+                if (!isDragging) return;
+                e.preventDefault();
+            });
+
+            track?.addEventListener('mouseup', (e: MouseEvent) => {
+                if (!isDragging) return;
+                isDragging = false;
+                track.style.cursor = 'grab';
+                const diff: number = startX - e.pageX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) next();
+                    else prev();
+                }
+            });
+
+            track?.addEventListener('mouseleave', () => {
+                isDragging = false;
+                if (track) track.style.cursor = 'grab';
+            });
+
+            // Handle resize
+            window.addEventListener('resize', () => {
+                const newItemsPerView: number = getItemsPerView();
+                if (newItemsPerView !== itemsPerView) {
+                    itemsPerView = newItemsPerView;
+                    maxIndex = Math.max(0, totalItems - itemsPerView);
+                    currentIndex = Math.min(currentIndex, maxIndex);
+                    updateSlider();
+                }
+            });
+
+            // Autoplay
+            const autoplayEnabled: boolean = slider.dataset.autoplay === 'true';
+            const intervalTime: number = parseInt(slider.dataset.interval || '6000', 10);
+            let autoplayTimer: ReturnType<typeof setInterval> | null = null;
+
+            if (autoplayEnabled) {
+                autoplayTimer = setInterval(next, intervalTime);
+
+                // Pause on hover
+                slider.addEventListener('mouseenter', () => {
+                    if (autoplayTimer) clearInterval(autoplayTimer);
+                });
+
+                slider.addEventListener('mouseleave', () => {
+                    autoplayTimer = setInterval(next, intervalTime);
+                });
+            }
+
+            // Tab visibility
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    items.forEach((item: HTMLElement) => {
+                        const video = item.querySelector<HTMLVideoElement>('video');
+                        if (video) video.pause();
+                    });
+                } else {
+                    updateSlider();
+                }
+            });
+
+            // Initialize
+            if (track) track.style.cursor = 'grab';
+            updateSlider();
+        })();
+    </script>
+</BaseLayout>
+
+<style>
+    /* Multi-Video Horizontal Slider Styles */
+    .slider-track-wrapper {
+        overflow: hidden;
+        margin: 0 -0.5rem;
+    }
+
+    .slider-track {
+        display: flex;
+        transition: transform 0.7s ease-in-out;
+        will-change: transform;
+    }
+
+    .slider-item {
+        flex: 0 0 auto;
+        padding: 0.5rem;
+    }
+
+    /* Widths handled by Tailwind classes: w-full md:w-1/2 lg:w-1/3 */
+
+    /* Vertical video slider - full height */
+    .slider-track {
+        height: 70vh;
+    }
+
+    @media (min-width: 768px) {
+        .slider-track {
+            height: 80vh;
+        }
+    }
+
+    .slider-item {
+        height: 100%;
+    }
+
+    .slider-item > div {
+        height: 100%;
+    }
+
+    .slider-item video,
+    .slider-item img {
+        height: 100%;
+        width: auto;
+        max-width: none;
+        object-fit: cover;
+    }
+
+    /* Dots */
+    .slider-dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 9999px;
+        background-color: rgba(120, 113, 108, 0.3);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border: none;
+        padding: 0;
+    }
+
+    .slider-dot.active {
+        width: 2rem;
+        background-color: #a3b18a; /* sage color */
+    }
+
+    /* Focus styles */
+    .slider-prev:focus,
+    .slider-next:focus,
+    .slider-dot:focus {
+        outline: 2px solid #a3b18a;
+        outline-offset: 2px;
+    }
+
+    /* Prevent text selection during drag */
+    .slider-track {
+        user-select: none;
+        -webkit-user-select: none;
+    }
+</style>
