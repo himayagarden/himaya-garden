@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+    title="Rental Inquiry — Himaya Garden"
+    description="Inquire about hosting your event at Himaya Garden. Reserve your private tea party, garden celebration, or intimate gathering at our Tucson venue."
+>
+    <main>
+        <!-- Page Header -->
+        <section class="pt-32 pb-20 bg-cream">
+            <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32 text-center">
+                <p class="section-label fade-in">Plan Your Gathering</p>
+                <h1 class="fade-in delay-1 font-serif text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-tight text-charcoal mb-6">
+                    Rental Inquiry
+                </h1>
+                <p class="fade-in delay-2 text-lg text-stone leading-relaxed max-w-2xl mx-auto mb-6">
+                    Ready to celebrate at Himaya Garden? Tell us about your vision and we'll help bring it to life.
+                </p>
+                <div class="fade-in delay-3 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-sage/10 text-sage font-medium text-sm">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Private Tea Party Date Reservation — $200.00 USD
+                </div>
+            </div>
+        </section>
+
+        <!-- Embedded HoneyBook Form Section -->
+        <section class="py-24 bg-cream">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="flex flex-col lg:flex-row gap-12 items-start">
+                    <!-- Form -->
+                    <div class="w-full lg:w-2/3">
+                        <div class="bg-white rounded-2xl shadow-sm border border-stone/10 overflow-hidden">
+                            <div class="p-6 md:p-8 border-b border-stone/10">
+                                <h2 class="font-serif text-2xl md:text-3xl text-charcoal mb-2">Inquiry Form</h2>
+                                <p class="text-stone">Fill out the details below and we'll be in touch within 24–48 hours.</p>
+                            </div>
+
+                            <!-- HoneyBook Embedded Form -->
+                            <div class="hb-p-65a547ab3461ab0036dc549e-1">
+                                <iframe
+                                    src="https://himayagarden.hbportal.co/embed/6877e5e20be5a00057895fe5"
+                                    name="6877e5e20be5a00057895fe5"
+                                    frameborder="0"
+                                    allow="allow-top-navigation allow-top-navigation-by-user-activation"
+                                    style="border-width: 0px; border-radius: 4px; width: 100%; min-height: 1593px;"
+                                    title="Himaya Garden Rental Inquiry Form"
+                                >
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Teaser -->
+        <section class="py-24 bg-cream-warm">
+            <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32 text-center">
+                <h2 class="font-serif text-3xl md:text-4xl text-charcoal mb-4">Have Questions?</h2>
+                <p class="text-stone text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+                    We're happy to answer any questions about our venue, collections, or availability. Reach out anytime.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="/venue-rates" class="btn-primary">View Venue Rates</a>
+                    <a href="tel:+15204671033" class="btn-secondary">Call (520) 467-1033</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="relative py-32 text-center text-white overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="/img/AG1_4.jpg" alt="Himaya Garden at golden hour" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-charcoal/50 z-[1]"></div>
+            <div class="relative z-[2] max-w-3xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <h2 class="fade-in font-serif text-4xl md:text-6xl font-medium tracking-tight leading-tight mb-6">We Can't Wait to Meet You</h2>
+                <p class="fade-in delay-1 text-lg leading-relaxed mb-8 text-white/90">Let's create something beautiful together at Himaya Garden.</p>
+                <div class="fade-in delay-2 flex flex-wrap gap-4 justify-center">
+                    <a href="/contact" class="btn-primary bg-white text-charcoal hover:bg-charcoal hover:text-white transition-all">
+                        Schedule a Tour
+                    </a>
+                    <a href="tel:+15204671033" class="btn-secondary border-white/30 text-white hover:bg-white hover:text-charcoal transition-all">
+                        Call (520) 467-1033
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>
