@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+    title="About Kurapia — Himaya Garden"
+    description="Learn about Kurapia, the drought-tolerant ground cover we use at Himaya Garden instead of traditional grass. Discover why it's perfect for Tucson, Arizona."
+>
+    <main>
+        <!-- Page Header -->
+        <section class="pt-32 pb-20 bg-cream">
+            <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32 text-center">
+                <p class="section-label fade-in">Our Garden</p>
+                <h1 class="fade-in delay-1 font-serif text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-tight text-charcoal mb-6">
+                    About Kurapia
+                </h1>
+                <p class="fade-in delay-2 text-lg text-stone leading-relaxed">Watch us GROW!</p>
+            </div>
+        </section>
+
+        <!-- About Kurapia Content -->
+        <section class="py-24 bg-cream">
+            <div class="max-w-3xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="prose prose-stone prose-lg max-w-none">
+                    <p class="text-stone leading-relaxed mb-8">
+                        If you've noticed our grass look a little different than normal grass, that's because it is. Instead of planting standard
+                        Bermuda grass like we had before, when we redesigned the garden, we planted a drought tolerant ground cover, called <strong
+                            class="text-charcoal"
+                        >
+                            Kurapia
+                        </strong>.
+                    </p>
+
+                    <p class="text-stone leading-relaxed mb-8">
+                        <strong class="text-charcoal">Kurapia</strong> is a drought tolerant ground cover that replaces traditional lawns, turf, and erosion
+                        control plants. When established, every year Kurapia blooms and acts as a pollinator plant for local wildlife.
+                    </p>
+
+                    <p class="text-stone leading-relaxed mb-8">
+                        We chose this particular plant for its adaptability and its hardiness. Because Kurapia does well with infrequent, heavy
+                        rainfall, can survive long stretches without water, and grows best in the heat, we thought it was a perfect choice for Tucson,
+                        Arizona.
+                    </p>
+
+                    <p class="text-stone leading-relaxed mb-8">
+                        Every small choice makes a difference, so even if it's taking a little bit longer for our Kurapia to spread, we know that when
+                        it takes root, it will be beautiful and better suited for our climate.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Top -->
+        <section class="py-12 bg-cream text-center">
+            <button
+                onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                class="inline-flex items-center gap-2 text-stone hover:text-sage transition-colors"
+            >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                </svg>
+                Back to Top
+            </button>
+        </section>
+    </main>
+</BaseLayout>

@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+    title="Land Acknowledgment — Himaya Garden"
+    description="Himaya Garden stands on the traditional, ancestral, and unceded lands of the Tohono O'odham and Pascua Yaqui peoples. We honor their enduring relationship with this place."
+>
+    <main>
+        <!-- Page Header -->
+        <section class="pt-32 pb-20 bg-cream">
+            <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32 text-center">
+                <p class="section-label fade-in">With Gratitude</p>
+                <h1 class="fade-in delay-1 font-serif text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-tight text-charcoal mb-6">
+                    Land Acknowledgment
+                </h1>
+            </div>
+        </section>
+
+        <!-- Land Acknowledgment Content -->
+        <section class="py-24 bg-cream">
+            <div class="max-w-3xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <div class="space-y-8 text-stone text-lg md:text-xl leading-relaxed">
+                    <p class="fade-in delay-1">
+                        Himaya Garden stands on the traditional, ancestral, and unceded lands of the <strong class="text-charcoal">
+                            Tohono O'odham
+                        </strong> and <strong class="text-charcoal">Pascua Yaqui</strong> peoples. We honor their enduring relationship with this place,
+                        their stewardship of the Sonoran Desert, and the cultural foundations they have sustained for generations.
+                    </p>
+
+                    <p class="fade-in delay-2">
+                        We recognize the sovereignty of these Nations and express our deepest gratitude for their care of this land since time
+                        immemorial. May our gatherings here reflect respect, understanding, and a commitment to ongoing reconciliation.
+                    </p>
+                </div>
+
+                <!-- Decorative Divider -->
+                <div class="fade-in delay-3 flex items-center justify-center gap-4 my-16">
+                    <div class="w-16 h-px bg-sage/30"></div>
+                    <div class="w-2 h-2 rounded-full bg-sage"></div>
+                    <div class="w-16 h-px bg-sage/30"></div>
+                </div>
+
+                <!-- Learn More -->
+                <div class="fade-in delay-3 text-center">
+                    <p class="text-stone mb-6">To learn more about the Indigenous peoples of this region:</p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a
+                            href="https://www.tonation-nsn.gov/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage/10 text-sage hover:bg-sage hover:text-white transition-all font-medium text-sm tracking-wide"
+                        >
+                            Tohono O'odham Nation
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                >
+                                </path>
+                            </svg>
+                        </a>
+                        <a
+                            href="https://www.pascuayaquitribe.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sage/10 text-sage hover:bg-sage hover:text-white transition-all font-medium text-sm tracking-wide"
+                        >
+                            Pascua Yaqui Tribe
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                >
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="relative py-32 text-center text-white overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="/img/AG1_4.jpg" alt="Himaya Garden landscape" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-charcoal/50 z-[1]"></div>
+            <div class="relative z-[2] max-w-3xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32">
+                <h2 class="fade-in font-serif text-4xl md:text-5xl font-medium tracking-tight leading-tight mb-6">Rooted in Respect</h2>
+                <p class="fade-in delay-1 text-lg leading-relaxed mb-8 text-white/90">
+                    We are committed to honoring the land and its original caretakers in everything we do.
+                </p>
+                <div class="fade-in delay-2 flex flex-wrap gap-4 justify-center">
+                    <a href="/about-us" class="btn-primary bg-white text-charcoal hover:bg-charcoal hover:text-white transition-all">Our Story</a>
+                    <a href="/contact" class="btn-secondary border-white/30 text-white hover:bg-white hover:text-charcoal transition-all">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</BaseLayout>
