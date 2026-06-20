@@ -1,19 +1,17 @@
 ---
 const navLinks = [
-    { href: '/venue-rates', label: 'Venue Details' },
-    { href: '/upcoming-events', label: 'Upcoming Events' },
+    // { href: '/venue-rates', label: 'Venue Details' },
+    // { href: '/upcoming-events', label: 'Upcoming Events' },
     { href: '/private-events', label: 'Private Events' },
     { href: '/gallery', label: 'Gallery' },
     { href: 'https://dragonflycakes.com/', label: 'Dragonfly Cakes®' },
     { href: '/about-us', label: 'Our Story' },
 ];
-
-const phone = '(520) 123-4567';
-const phoneHref = 'tel:+15201234567';
 ---
 
 <style>
     #main-header {
+        background: rgba(255, 255, 255, 0.678);
         position: fixed;
         top: 0;
         left: 0;
@@ -100,6 +98,7 @@ const phoneHref = 'tel:+15201234567';
     .nav-link.btn-primary {
         font-size: 0.75rem;
         padding: 0.75rem 1.5rem;
+        color: #fff !important;
     }
 
     .mobile-menu-btn {
@@ -180,7 +179,7 @@ const phoneHref = 'tel:+15201234567';
 </style>
 
 <header id="main-header">
-    <div class="section-padding header-inner">
+    <div class="section-padding header-inner max-w-7xl mx-auto">
         <a href="/" class="logo">
             <div class="logo-icon">
                 <img src="media/img/hg-logo-orginal.webp" alt="Himaya Garden logo" />
